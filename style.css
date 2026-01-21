@@ -1,0 +1,102 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+    display: flex;
+    height: 100 vh;
+    width: 100%;
+}
+
+/* Image Side */
+.image-section {
+    flex: 1;
+    background-color: #000;
+}
+
+.image-section img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Form Side */
+.form-section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 40px;
+    
+}
+
+.form-wrapper {
+    width: 100%;
+    max-width: 400px;
+}
+
+.logo {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    letter-spacing: 2px;
+}
+
+h1 { font-size: 28px; margin-bottom: 8px; }
+p { color: #666; font-size: 14px; margin-bottom: 40px; }
+h2 { font-size: 20px; margin-bottom: 20px; }
+
+/* Input Styling */
+.input-group { margin-bottom: 20px; }
+label { display: block; font-size: 12px; margin-bottom: 8px; color: #333; }
+
+input[type="name"],
+input[type="email"], 
+input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    outline: none;
+}
+
+.password-wrapper { position: relative; }
+.toggle-password {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #999;
+}
+
+/* Button Styling */
+.register-btn {
+    width: 100%;
+    padding: 14px;
+    background-color: #144572; /* Purple from image */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.register-btn:hover {
+    background-color:#144572;;
+}
+
+.checkbox-group {
+    font-size: 12px;
+    color: #666;
+    display: flex;
+    align-items:center;
+    gap: 7px;
+}
+
+a { color: #144572;; text-decoration: none; }
